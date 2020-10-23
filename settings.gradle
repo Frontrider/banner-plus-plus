@@ -1,12 +1,16 @@
-pluginManagement {
-    repositories {
+pluginManagement{
+    repositories{
         jcenter()
-        maven {
+        maven{
             name = 'Fabric'
             url = 'https://maven.fabricmc.net/'
         }
         gradlePluginPortal()
     }
+    plugins{
+        id 'fabric-loom' version loom_version
+    }
+
 }
 
 rootProject.name = 'bannerpp'
